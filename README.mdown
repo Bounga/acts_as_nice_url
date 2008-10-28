@@ -1,0 +1,50 @@
+NiceUrl
+=======
+
+This acts_as extension provides the capabilities for creating a nice url based on an attribute of the current object. You can set / unset the object id in front of the URL and choose the object attribute to use to generate the URL.
+
+Installation
+============
+
+In your Rails app root, use the following command-line : 
+
+	ruby script/plugin install git://github.com/Bounga/acts_as_nice_url.git
+
+
+Example
+=======
+
+In your model :
+
+	class Player < ActiveRecord::Base
+	  acts_as_nice_url :id => false, :title => :full_name
+	end
+	
+then in your views :
+
+	link_to(:controller => :players, :action => :show, :id => @player)
+
+or	
+
+	player_path(@player)
+
+Use id only in some case
+------------------------
+
+If you want to use the **id only** in the generated URL, you have to fill the id parameter with the id only, not the full object :
+
+	link_to(:controller => :players, :action => :show, :id => @player.id)
+
+or	
+
+	player_path(@player.id)
+	
+Other
+=====
+
+For more information see [Project homepage](http://bounga.lighthouseapp.com/projects/18682-acts_as_nice_url/home)
+
+Problems, comments, and suggestions are welcome on the [ticket system](http://bounga.lighthouseapp.com/projects/18682-acts_as_nice_url/tickets/new)
+
+
+Copyright (c) 2008 Nicolas Cavigneaux, released under the MIT license
