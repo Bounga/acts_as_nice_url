@@ -44,6 +44,8 @@ module Bounga
           s = Iconv.new('us-ascii//TRANSLIT', 'utf-8').iconv(nice_title.to_s).strip.downcase
           # Remove spaces
           s = s.gsub(/\s+/, '-')
+          # Replace dots
+          s = s.gsub('.', '-')
           # Remove reserved characters
           s = s.gsub(/[^a-z0-9\-]/, '')
           # Remove multiple dashes
