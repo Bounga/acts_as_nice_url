@@ -10,7 +10,16 @@ Installation
 
 In your Rails app root, use the following command-line : 
 
-	ruby script/plugin install git://github.com/Bounga/acts_as_nice_url.git
+	cd vendor/plugins
+	hg clone http://bitbucket.org/Bounga/acts_as_nice_url/
+	
+or install it system-wide :
+
+	$ sudo gem install flash_helper
+	
+and require it in Rails::Initializer (environment.rb) :
+
+	config.gem 'flash_helper'
 
 
 Example

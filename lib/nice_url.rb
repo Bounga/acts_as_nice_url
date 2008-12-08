@@ -8,6 +8,8 @@ module Bounga
       # This acts_as extension provides the capabilities for creating a nice url based on an attribute of the current object.
       # You can set / unset the object id in front of the URL and choose the object attribute to use to generate the URL.
       #
+      # This extension requires Iconv to be install on your system
+      #
       # Author example:
       #
       #   class Author < ActiveRecord::Base
@@ -63,5 +65,7 @@ module Bounga
     end
   end
 end
+
+ActiveRecord::Base.send(:include, Bounga::Acts::NiceUrl)
 
 
