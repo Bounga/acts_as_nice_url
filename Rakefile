@@ -6,7 +6,7 @@ require 'rubyforge'
 
 SPEC = Gem::Specification.new do |s|
    s.name               = 'acts_as_nice_url'
-   s.version            = '1.0.0'
+   s.version            = '2.0.0'
    s.authors            = ['Nicolas Cavigneaux']
    s.email              = 'nico@bounga.org'
    s.homepage           = 'http://www.bitbucket.org/Bounga/acts_as_nice_url'
@@ -19,7 +19,7 @@ SPEC = Gem::Specification.new do |s|
    s.has_rdoc           = true
    s.extra_rdoc_files   = ['README']
    s.require_paths      = ["lib"]
-   s.add_dependency('activerecord')
+   s.add_dependency('activerecord', '>=2.2.0')
 end
 
 desc 'run unit tests'

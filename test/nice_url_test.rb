@@ -1,8 +1,11 @@
+# Need to set this because tests doesn't mirror real Rails default conf
+$KCODE = 'u'
+
 require 'test/unit'
 
 require 'rubygems'
 require 'active_record'
-require 'iconv'
+require 'active_support'
 
 require "#{File.dirname(__FILE__)}/../init"
 
