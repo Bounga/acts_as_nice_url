@@ -6,7 +6,7 @@ require 'rubyforge'
 
 SPEC = Gem::Specification.new do |s|
    s.name               = 'acts_as_nice_url'
-   s.version            = '2.0.0'
+   s.version            = '2.0.1'
    s.authors            = ['Nicolas Cavigneaux']
    s.email              = 'nico@bounga.org'
    s.homepage           = 'http://www.bitbucket.org/Bounga/acts_as_nice_url'
