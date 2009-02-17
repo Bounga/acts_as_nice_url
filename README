@@ -15,11 +15,11 @@ In your Rails app root, use the following command-line :
 	
 or install it system-wide :
 
-	$ sudo gem install flash_helper
+	$ sudo gem install acts_as_nice_url
 	
 and require it in Rails::Initializer (environment.rb) :
 
-	config.gem 'flash_helper'
+	config.gem 'acts_as_nice_url'
 
 
 Example
