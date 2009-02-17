@@ -1,2 +1,2 @@
 $:.unshift "#{File.dirname(__FILE__)}/lib"
-require 'nice_url'
+require 'acts_as_nice_url'
